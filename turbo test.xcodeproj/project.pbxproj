@@ -16,6 +16,8 @@
 		AB91DE792992B5E800CD6E4E /* turbo_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB91DE782992B5E800CD6E4E /* turbo_testTests.swift */; };
 		AB91DE832992B5E800CD6E4E /* turbo_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB91DE822992B5E800CD6E4E /* turbo_testUITests.swift */; };
 		AB91DE852992B5E800CD6E4E /* turbo_testUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB91DE842992B5E800CD6E4E /* turbo_testUITestsLaunchTests.swift */; };
+		AB91DE932992B6DF00CD6E4E /* Turbo in Frameworks */ = {isa = PBXBuildFile; productRef = AB91DE922992B6DF00CD6E4E /* Turbo */; };
+		AB91DE952992C69E00CD6E4E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB91DE942992C69E00CD6E4E /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		AB91DE7E2992B5E800CD6E4E /* turbo testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "turbo testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB91DE822992B5E800CD6E4E /* turbo_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = turbo_testUITests.swift; sourceTree = "<group>"; };
 		AB91DE842992B5E800CD6E4E /* turbo_testUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = turbo_testUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AB91DE942992C69E00CD6E4E /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB91DE932992B6DF00CD6E4E /* Turbo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +110,7 @@
 				AB91DE6A2992B5E800CD6E4E /* Assets.xcassets */,
 				AB91DE6C2992B5E800CD6E4E /* LaunchScreen.storyboard */,
 				AB91DE6F2992B5E800CD6E4E /* Info.plist */,
+				AB91DE942992C69E00CD6E4E /* WebViewController.swift */,
 			);
 			path = "turbo test";
 			sourceTree = "<group>";
@@ -143,6 +148,9 @@
 			dependencies = (
 			);
 			name = "turbo test";
+			packageProductDependencies = (
+				AB91DE922992B6DF00CD6E4E /* Turbo */,
+			);
 			productName = "turbo test";
 			productReference = AB91DE5E2992B5E500CD6E4E /* turbo test.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = AB91DE552992B5E500CD6E4E;
+			packageReferences = (
+				AB91DE912992B6DF00CD6E4E /* XCRemoteSwiftPackageReference "turbo-ios" */,
+			);
 			productRefGroup = AB91DE5F2992B5E500CD6E4E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,6 +272,7 @@
 				AB91DE662992B5E500CD6E4E /* ViewController.swift in Sources */,
 				AB91DE622992B5E500CD6E4E /* AppDelegate.swift in Sources */,
 				AB91DE642992B5E500CD6E4E /* SceneDelegate.swift in Sources */,
+				AB91DE952992C69E00CD6E4E /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +608,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AB91DE912992B6DF00CD6E4E /* XCRemoteSwiftPackageReference "turbo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hotwired/turbo-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB91DE922992B6DF00CD6E4E /* Turbo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB91DE912992B6DF00CD6E4E /* XCRemoteSwiftPackageReference "turbo-ios" */;
+			productName = Turbo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AB91DE562992B5E500CD6E4E /* Project object */;
 }
